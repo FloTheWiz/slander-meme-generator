@@ -86,12 +86,12 @@
 			<div class="marg">Remaining time: {msToTime(remainingRenderingTime)}</div>
 		{:else if isError}
 			<div class="marg">An error occurred while rendering your video</div>
-			<Button class="marg" on:click={render}>Try agin</Button>
+			<Button class="marg" on:click={render}>Try again</Button>
 		{:else if $videoSrc === ''}
 			<Button on:click={render}>Start rendering</Button>
 		{:else}
 			<div class="marg">Video rendered successfully!</div>
-			<Button class="marg" on:click={render}>Render agin</Button>
+			<Button class="marg" on:click={render}>Render again</Button>
 		{/if}
 	</Tile>
 
